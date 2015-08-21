@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/Bajix/express-error-funnel/issues"
   },
-  "homepage": "https://github.com/Bajix/express-error-funnel#readme"
+  "homepage": "https://github.com/Bajix/express-error-funnel#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
 }
