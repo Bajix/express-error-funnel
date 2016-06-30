@@ -22,8 +22,9 @@
   },
   "homepage": "https://github.com/Bajix/express-error-funnel#readme",
   "devDependencies": {
-    "chai": "^3.2.0",
-    "mocha": "^2.2.5"
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "node-mocks-http": "^1.5.2"
   },
   "dependencies": {
     "node-restify-errors": "^0.1.0"

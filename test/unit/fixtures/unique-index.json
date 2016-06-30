@@ -1,0 +1,10 @@
+{
+  "code": 11000,
+  "index": 0,
+  "errmsg": "E11000 duplicate key error collection: funnel.users index: email_1 dup key: { : \"foo@bar.com\" }",
+  "op": {
+    "_id": "57757c26b1f5fc0866e4ee54",
+    "email": "foo@bar.com",
+    "__v": 0
+  }
+}
