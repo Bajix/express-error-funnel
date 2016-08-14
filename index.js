@@ -37,13 +37,14 @@ module.exports = function ( err, req, res, next ) {
   }
 
   if (err.name === 'MongoError' && err.code === 11000) {
+
     var values = err.message.match(/\"([^\"]+)\"/),
       value = values && values[values.length - 1],
       paths = err.message.match(/index:\s([^\s]+)/),
       path = paths && paths[paths.length - 1];
 
     if (path && value) {
-      path = path.replace(/\_\d$/, '');
+      path = path.match(/([a-zA-Z]+)_\d$/)[1];
       err = new handler.ConflictError('Duplicate document exists');
       err.code = 11000;
       err.errors = [{
