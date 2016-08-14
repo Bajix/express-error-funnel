@@ -1,6 +1,6 @@
 {
   "name": "express-error-funnel",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Standardize API responses from errors objects",
   "main": "index.js",
   "scripts": {
